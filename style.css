@@ -1,0 +1,400 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Syne", sans-serif;
+    background-color: #ECF6FE;
+    color: #381664;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-bottom: 1px solid #381664;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.nav-element {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero-text h1 {
+    margin: 120px 0 10px 0;
+    font-size: 115px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 95vw;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-items: center;
+    align-items: center;
+    margin: 100px 50px;
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-text, .lable {
+    font-family: "Familjen Grotesk", serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.lable {
+    font-size: 17px;
+}
+
+/* Chair Block */
+.chair-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+    padding: 5px;
+    border-bottom: 1px solid #381664;
+}
+
+.left img {
+    width: 800px;
+    height: 1000px;
+}
+
+.right h2 {
+    font-size: 62px;
+    font-weight: 700;
+}
+
+.right p {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Familjen Grotesk", serif;
+    margin: 10px;
+}
+
+/* Get in Touch */
+.get-in-touch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 50px;
+    border-bottom: 1px solid #381664;
+}
+
+.about p {
+    font-size: 48px;
+    font-weight: 700;
+    width: 50vw;
+}
+
+.about-text p {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Familjen Grotesk", serif;
+}
+
+/* Button */
+.btn {
+    padding: 15px 23px;
+    background-color: #440A8F;
+    border: none;
+    border-radius: 8px;
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 17px;
+    color: white;
+    margin: 45px auto;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    margin: 100px 20px 250px 20px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.contact h3 {
+    font-weight: 300;
+    font-size: 32px;
+    padding: 20px;
+}
+
+.contact form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.contact form input {
+    background-color: #fff;
+}
+
+.contact form button {
+    margin: 0;
+}
+
+.email {
+    border: 1px solid #440A8F;
+    border-radius: 10px;
+    font-family: "Archivo Narrow", sans-serif;
+    padding: 10px 25px;
+    font-size: 20px;
+    width: 500px;
+}
+
+/* Socials */
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 40px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 25px 40px;
+}
+
+.footer p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact-me {
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    font-style: normal;
+    padding: 10px 25px;
+    font-size: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .hero-text h1 {
+        font-size: 80px;
+    }
+
+    .about-me {
+        font-size: 35px;
+        width: 80vw;
+    }
+
+    .right p {
+        font-size: 20px;
+    }
+
+    .contact {
+        font-size: 25px;
+    }
+
+    .contact h3 {
+        font-size: 28px;
+    }
+
+    .email {
+        width: 400px;
+    }
+
+    .footer p {
+        font-size: 20px;
+    }
+
+    .chair-block {
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .left img {
+        max-width: 600px;
+    }
+
+    .right h2 {
+        font-size: 48px;
+    }
+
+    .about p {
+        font-size: 36px;
+        max-width: 60vw;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .navbar {
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    .nav-element {
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 50px;
+        margin: 20px 0;
+    }
+
+    .about-me {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .right p {
+        font-size: 18px;
+        width: 80vw;
+    }
+
+    .contact {
+        font-size: 20px;
+    }
+
+    .contact h3 {
+        font-size: 24px;
+    }
+
+    .email {
+        width: 300px;
+    }
+
+    .footer p {
+        font-size: 18px;
+    }
+
+    .chair-block {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .left img {
+        max-width: 100%;
+    }
+
+    .right h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .right p {
+        text-align: center;
+    }
+
+    .get-in-touch {
+        flex-direction: column;
+        padding: 80px 30px;
+        text-align: center;
+    }
+
+    .about p {
+        font-size: 32px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .about-me {
+        font-size: 25px;
+    }
+
+    .right p {
+        font-size: 16px;
+    }
+
+    .contact {
+        font-size: 18px;
+    }
+
+    .contact h3 {
+        font-size: 20px;
+    }
+
+    .email {
+        width: 250px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+
+    .chair-block {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .right h2 {
+        font-size: 28px;
+    }
+
+    .get-in-touch {
+        padding: 50px 20px;
+    }
+
+    .about p {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+    }
+}
